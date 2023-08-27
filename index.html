@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="spotify">
+      <div class="side-nav">
+
+        <div class="side-nav-top">
+          <ul class="nav-links">
+           
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="home" viewBox="0 0 16 16">
+            <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z"/>
+            </svg> <span>Home</span></a></li>
+           
+          <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg><span>Search</span></a></li>
+          </ul>
+        </div>
+
+        <!-- Side nav bottom -->
+        <div class="side-nav-bottom">
+          <div class="side-nav-bottom-first">
+            <ul class="nav-links">
+              <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-music-note-beamed" viewBox="0 0 16 16">
+              <path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z"/>
+              <path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z"/>
+              <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z"/>
+              </svg>Library</a><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="plus" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" fill="currentColor" class="arrow" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+              </svg></li>
+           </ul>
+           <button type="button" class="btn">Playlists</button><button type="button" class="btn2">Artists</button>
+           <div class="like">
+            <img src="cover/liked.jpeg">
+            <div class="container">
+              <h4 class="text-h4">Liked Songs</h4>
+              <p class="text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pin-angle-fill" viewBox="0 0 16 16">
+              <path d="M9.828.722a.5.5 0 0 1 .354.146l4.95 4.95a.5.5 0 0 1 0 .707c-.48.48-1.072.588-1.503.588-.177 0-.335-.018-.46-.039l-3.134 3.134a5.927 5.927 0 0 1 .16 1.013c.046.702-.032 1.687-.72 2.375a.5.5 0 0 1-.707 0l-2.829-2.828-3.182 3.182c-.195.195-1.219.902-1.414.707-.195-.195.512-1.22.707-1.414l3.182-3.182-2.828-2.829a.5.5 0 0 1 0-.707c.688-.688 1.673-.767 2.375-.72a5.922 5.922 0 0 1 1.013.16l3.134-3.133a2.772 2.772 0 0 1-.04-.461c0-.43.108-1.022.589-1.503a.5.5 0 0 1 .353-.146z"/>
+              </svg>  Playlist . 45 songs </p>
+            </div>
+         </div>
+         <div class="playlist">
+          <img src="cover/playlist.png">
+          <div class="container">
+             <h4 class="text-h4">My Playlist #1</h4>
+             <p class="text">Playlist . Mahima Sahu</p>
+          </div>
+        </div>
+        <div class="darshan">
+          <img src="cover/darshan.jpeg">
+          <div class="container">
+             <h4 class="text-h4">Darshan Raval</h4>
+             <p class="text">Artist</p>
+          </div>
+        </div>
+        
+        <div class="shawn">
+          <img src="cover/shawn.jpg">
+          <div class="container">
+             <h4 class="text-h4">Shawn Mendes</h4>
+             <p class="text">Artist</p>
+          </div>
+         </div>
+         <div class="araina">
+          <img src="cover/araina.jpg">
+          <div class="container">
+             <h4 class="text-h4">Araina Grande</h4>
+             <p class="text">Artist</p>
+          </div>
+        </div> 
+          </div>
+        </div>
+        
+      </div>
+
+      
+   <!-- Right Side -->
+      <div class="right-side">
+        <div class="box">
+          <nav>
+            <div class="flex-left">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="backward" viewBox="0 0 16 16">
+                  <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="forward" viewBox="0 0 16 16">
+                  <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                </svg>
+             </div>
+             <button class="flex-right-btn">Explore Premium</button>
+             <div class="flex-right">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="users" viewBox="0 0 16 16">
+                  <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="user" viewBox="0 0 16 16">
+                  <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                </svg>
+             </div>
+             
+            </nav>
+            <div class="nav-below-box">
+              <div class="monsoon-hits">
+                <div class="monsoon-hits-left-flex">
+                   <img src="cover/monsoon-hits.png" class="monsoon-img"> 
+                </div>
+                <div class="monsoon-hits-right-flex">
+                   <h6 class="monsoon-h6">PLAYLIST</h6>
+                   <h1 class="monsoon-h1">Monsoon Love Hits</h1>
+                   <p class="monsoon-p">The best mix of romantic Hindi songs to make your day.Hit play to listen.</p>
+                   <button class="monsoon-play-btn">Play</button>
+                   <button class="monsoon-follow-btn">Follow</button>
+                </div>
+              </div>
+            </div>
+            <h1 class="sub-headings">Good evening</h1>
+            <div class="music-container-1">
+              
+              <div class="dard">
+                <img src="cover/dard-2.0.png" class="music-img">
+                <p class="music-p">Dard</p>
+              </div>
+              <div class="perfect">
+                <img src="cover/perfect.png" class="music-img">
+                <p class="music-p">Here's Your Perfect</p>
+              </div>
+              <div class="holdmyhand">
+                <img src="cover/holdmyhand.png" class="music-img">
+                <p class="music-p">Hold my hand</p>
+              </div>
+            </div>
+            <div class="music-container-2">
+              <div class="darshan-monsoon">
+                <img src="cover/darshan-monsoon.jpeg" class="music-img">
+                <p class="music-p">Darshan Raval Monsoon Special☔</p>
+              </div>
+              <div class="tu-mileya">
+                <img src="cover/tu-mileya.png" class="music-img">
+                <p class="music-p">Tu Mileya</p>
+              </div>
+              <div class="driver-license">
+                <img src="cover/driver-license.png" class="music-img">
+                <p class="music-p">Driver License</p>
+              </div>
+              
+            </div>
+
+            <!-- Jump Back In -->
+            <h1 class="sub-headings">Jump Back In</h1>
+            <div class="music-container-3">
+               <div class="mahiye-jinna ">
+                 <img src="cover/mahiye-jinna.png" class="img-container">    
+                 <h5 class="h5-container">Mahiye Jinna Sona</h5>
+                 <p class="p-container">Darshan Raval</p>            
+               </div>
+               <div class="tum-mere">
+                 <img src="cover/tum-mere.png" class="img-container">
+                 <h5 class="h5-container">Tum Mere</h5>
+                 <p class="p-container">Darshan Raval</p>                  
+               </div>
+               <div class="chaleya">
+                 <img src="cover/chaleya.png" class="img-container"> 
+                 <h5 class="h5-container">Chaleya (from Jawan)</h5>
+                 <p class="p-container">Arijit singh</p>                 
+               </div>
+               <div class="happier">
+                 <img src="cover/happier.png" class="img-container">    
+                 <h5 class="h5-container">Happier Than Ever</h5>
+                 <p class="p-container">Billie Eilish</p>                
+               </div>
+
+            </div>
+
+            <!-- Recently Played -->
+            <h1 class="sub-headings">Recently Played</h1>
+            <div class="music-container-4">
+               <div class="tum-mere">
+                 <img src="cover/tum-mere.png" class="img-container">    
+                 <h5 class="h5-container">Tum Mere</h5>
+                 <p class="p-container">Darshan Raval</p>            
+               </div>
+               <div class="faasla">
+                 <img src="cover/dard-2.0.png" class="img-container">
+                 <h5 class="h5-container">Faasla</h5>
+                 <p class="p-container">Darshan Raval</p>                  
+               </div>
+               <div class="piya-re">
+                <img src="cover/piya-re.png" class="img-container"> 
+                <h5 class="h5-container">Piya re</h5>
+                <p class="p-container">Darshan Raval</p>                 
+              </div>
+               <div class="cant-have">
+                <img src="cover/can't-have.png" class="img-container">    
+                <h5 class="h5-container">If I can't have you</h5>
+                <p class="p-container">Shawn Mendes</p>                
+              </div>
+               
+               
+            </div>
+
+            <!-- Fresh Music -->
+            <h1 class="sub-headings">Fresh Music</h1>
+            <div class="music-container-5">
+               <div class="pop-darshan">
+                 <img src="cover/pop-darshan.png" class="img-container">    
+                 <h5 class="h5-container">I-Pop-Superhits</h5>
+                 <p class="p-container">Biggest hits from your favourite pop star.</p>            
+               </div>
+               <div class="new-hindi">
+                 <img src="cover/new-hindi.png" class="img-container">
+                 <h5 class="h5-container">New Music Hindi</h5>
+                 <p class="p-container">'Chaleya' from Jawan is here now! Listen Now.</p>                  
+               </div>
+               <div class="new-dance">
+                <img src="cover/new-dance.png" class="img-container">    
+                <h5 class="h5-container">New in Dance</h5>
+                <p class="p-container">Catch Badshaah latest banger, 'Gone Girl'</p>                
+              </div>
+               <div class="latest-tamil">
+                 <img src="cover/latest-tamil.png" class="img-container"> 
+                 <h5 class="h5-container">Latest Tamil</h5>
+                 <p class="p-container">New Music from Kollywood. Cover 'Jailer'</p>                 
+               </div>
+               
+
+            </div>
+
+            <!-- More of what you like  -->
+            <h1 class="sub-headings">More of what you like</h1>
+            <div class="music-container-6">
+               <div class="darshan-radio">
+                 <img src="cover/darshn-radio.png" class="img-container">    
+                 <h5 class="h5-container">Darshan-radio</h5>
+                 <p class="p-container">With Tanishq Bagchi, Arjun Kanungo and many more.</p>            
+               </div>
+               <div class="happy-vibes">
+                 <img src="cover/happy-vibes.png" class="img-container">
+                 <h5 class="h5-container">Happy Vibes</h5>
+                 <p class="p-container">Let this happy tunes put smile on your face.</p>                  
+               </div>
+               <div class="music-shuttle">
+                <img src="cover/music-shuttle.png" class="img-container"> 
+                <h5 class="h5-container">Music Shuttle</h5>
+                <p class="p-container">Get in for a musical commute.</p>                 
+              </div>
+               <div class="darshan-raval">
+                <img src="cover/darshan-raval.png" class="img-container">    
+                <h5 class="h5-container">This is Darshan Raval</h5>
+                <p class="p-container">Darshan Raval all popular songs in one playlist.</p>                
+              </div>
+               
+               
+
+            </div>
+
+
+            <!-- India's Best -->
+            <h1 class="sub-headings">India's Best</h1>
+            <div class="music-container-7">
+               <div class="soulful-sitar">
+                 <img src="cover/soulful-sitar.png" class="img-container">    
+                 <h5 class="h5-container">ECHO : Soulful Sitar</h5>
+                 <p class="p-container">Cover : Rishabh Rikhiram Sharma</p>            
+               </div>
+               <div class="indie-india">
+                 <img src="cover/indie-india.png" class="img-container">
+                 <h5 class="h5-container">Indie India</h5>
+                 <p class="p-container">Best of the Indian Indie scene.</p>                  
+               </div>
+               <div class="tollywood-hits">
+                <img src="cover/tollywood-hits.png" class="img-container">    
+                <h5 class="h5-container">Tollywood Pearls</h5>
+                <p class="p-container">Best of Tollywood music of past 10 year.</p>                
+              </div>
+               <div class="punjabi-hits">
+                 <img src="cover/punjabi-hits.png" class="img-container"> 
+                 <h5 class="h5-container">Punjabi 101</h5>
+                 <p class="p-container">Ultimate 101 punjabi hits with AP Dhillon</p>                 
+               </div>
+               
+
+            </div>
+
+            <!-- Your Favourite Artists -->
+            <h1 class="sub-headings">Your Favourite Artists</h1>
+            <div class="music-container-8">
+               <div class="darshan-fav">
+                 <img src="cover/darshan.jpeg" class="img-container-fav">    
+                 <h5 class="h5-container">Darshan Raval </h5>
+                 <p class="p-container">Artist.</p>            
+               </div>
+               <div class="araina-fav">
+                 <img src="cover/araina.jpg" class="img-container-fav">
+                 <h5 class="h5-container">Ariana Grainde</h5>
+                 <p class="p-container">Artist</p>                  
+               </div>
+               <div class="shawn-fav">
+                <img src="cover/shawn.jpg" class="img-container-fav">    
+                <h5 class="h5-container">Shawn Mendes</h5>
+                <p class="p-container">Artist</p>                
+              </div>
+               <div class="arijit-fav">
+                 <img src="cover/arijit.jpeg" class="img-container-fav"> 
+                 <h5 class="h5-container">Arijit Singh</h5>
+                 <p class="p-container">Artist</p>                 
+               </div>
+
+            </div>
+
+       </div>
+      </div>
+
+      <!-- <div class="bottom">
+        <div class="songInfo">
+          <div id="masterSongImg"> 
+            <img src="barishon.png" class="masterSongImg-img">
+          </div>  
+          <div class="masterSongName">
+            <h6 class="masterSongName-h6">Barishon Mein</h6>
+            <div class="masterSongName-p">Darshan Raval</div>
+          </div>
+             
+        </div>
+        <div class="icons">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-skip-backward-fill" viewBox="0 0 16 16">
+            <path d="M.5 3.5A.5.5 0 0 0 0 4v8a.5.5 0 0 0 1 0V8.753l6.267 3.636c.54.313 1.233-.066 1.233-.697v-2.94l6.267 3.636c.54.314 1.233-.065 1.233-.696V4.308c0-.63-.693-1.01-1.233-.696L8.5 7.248v-2.94c0-.63-.692-1.01-1.233-.696L1 7.248V4a.5.5 0 0 0-.5-.5z"/>
+          </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-skip-forward-fill" viewBox="0 0 16 16">
+              <path d="M15.5 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V8.753l-6.267 3.636c-.54.313-1.233-.066-1.233-.697v-2.94l-6.267 3.636C.693 12.703 0 12.324 0 11.693V4.308c0-.63.693-1.01 1.233-.696L7.5 7.248v-2.94c0-.63.693-1.01 1.233-.696L15 7.248V4a.5.5 0 0 1 .5-.5z"/>
+            </svg>
+           
+        </div> -->
+        <!-- <input type="range"  name="range" id="myProgressBar"  min="0" value="0" max="100"> -->
+        
+    </div>
+   
+     
+   </div>
+ </body>
+</html>

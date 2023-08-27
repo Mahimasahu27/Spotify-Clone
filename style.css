@@ -1,0 +1,868 @@
+body{
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
+}
+
+*{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    text-decoration:none;
+   
+}
+.spotify{
+    /* margin-top:10px; */
+    margin-right:10px;
+    width:100%;
+    height:100%;
+    display:flex;
+    gap:5px;
+}
+
+.side-nav{
+    background-color:black;
+    width:23%;
+    height:100vh;
+    margin-left:5px;
+}
+
+/* Side nav top */
+
+.side-nav-top{
+    height:20%;
+    margin:7px 3px 7px 7px;
+    background-color: rgb(21, 20, 20);
+    border-radius:8px;
+    /* position:fixed; */
+    
+}
+.nav-links li a{
+   
+    color:rgb(168, 166, 166);
+    font-size:16px;
+    line-height: 55px;
+    padding-left:30px;
+    box-sizing: border-box;
+    font-weight: bold;
+    
+}
+.nav-links li a svg{
+    margin-right:25px;
+    margin-top:12px;
+}
+.nav-links li a:hover{
+    color:white;
+}
+
+/* Side nav bottom */
+
+
+.side-nav-bottom-first{
+    width:22%;
+    height:80%;
+    margin:0 3px 7px 7px;
+    background-color: rgb(21, 20, 20);
+    border-radius:8px;
+    position:fixed;
+}
+.plus{
+    color:rgb(168, 166, 166);
+    margin-left:75px; 
+
+}
+.plus:hover{
+    color:white;
+}
+.arrow{
+    color:rgb(168, 166, 166);
+    margin-left:15px;
+}
+.arrow:hover{
+    color:white;
+}
+
+.btn{
+    font-size:13px;
+    background-color:rgb(32, 31, 31);
+    padding:11px;
+    color:rgb(217, 217, 217);
+    border-radius:18px;
+    border:none;
+    font-weight: bold;
+    margin:3px 0 4px 26px;
+}
+.btn2{
+    font-size:13px;
+    background-color:rgb(32, 31, 31);
+    padding:11px;
+    color:rgb(217, 217, 217);
+    border-radius:18px;
+    border:none;
+    font-weight: bold;
+    margin:3px 0 4px 10px;
+
+}
+.btn:hover{
+    background-color: rgb(41, 40, 40);
+}
+.btn2:hover{
+    background-color: rgb(41, 40, 40);
+}
+
+/* Bottom Scroll Bar */
+
+.bottom-scroll{
+    height:100vh;
+    /* width:40%; */
+    margin-top:10px;
+    background-color: rgb(21, 20, 20);
+
+    
+}
+
+.like{
+    display:flex;
+    padding:7px 0 7px 0;
+    margin-left:4px;
+}
+.like img{
+    width:50px;
+    height:50px;
+    margin-left:26px;
+    border-radius:4px;
+}
+.like:hover{
+    background-color: rgb(34, 32, 32);
+    border-radius:5px;
+}
+.text-h4{
+    color:rgb(217, 217, 217);
+    font-size:16px;
+}
+.text{
+    font-size:14px;
+    color:rgb(168, 166, 166);
+    
+}
+.container{  
+    margin:8px 0 0 15px;
+}
+.playlist{
+    padding:7px 0 7px 0;
+    display:flex;
+    margin-left:4px;
+}
+.playlist img{
+    width:50px;
+    height:50px;
+    margin-left:26px;
+    border-radius:4px;
+}
+.playlist:hover{
+    background-color: rgb(34, 32, 32);
+    border-radius:5px;
+}
+
+.darshan{
+    padding:7px 0 7px 0;
+    display:flex;
+    margin-left:4px;
+}
+.darshan img{
+    width:50px;
+    height:50px;
+    margin-left:26px;
+    border-radius:50%;
+}
+.darshan:hover{
+    background-color: rgb(34, 32, 32);
+    border-radius:5px;
+}
+.shawn{
+    padding:7px 0 7px 0;
+    display:flex;
+    margin-left:4px;
+}
+.shawn img{
+    width:50px;
+    height:50px;
+    margin-left:26px;
+    border-radius:50%;
+}
+.shawn:hover{
+    background-color: rgb(34, 32, 32);
+    border-radius:5px;
+}
+
+.araina{
+    padding:7px 0 7px 0;
+    display:flex;
+    margin-left:4px;
+}
+.araina img{
+    width:50px;
+    height:50px;
+    margin-left:26px;
+    border-radius:50%;
+}
+.araina:hover{
+    background-color: rgb(34, 32, 32);
+    border-radius:5px;
+}
+
+
+/* Right side */
+.right-side{
+    background-color:black;
+    width:77%;
+    height:100vh;
+}
+
+.box{
+    background-image:linear-gradient(to bottom left,rgba(5, 85, 85, 0.402),rgb(21, 20, 20),rgb(21, 20, 20));
+    width:99%;
+    margin:7px 7px 7px 0;
+    height:100vh;
+    position:fixed;
+    border-radius:8px 8px 0 0;
+    overflow:auto;
+}
+
+
+
+
+nav{
+    position:fixed;
+    width:76%;
+    height:61px;
+    background-color: rgba(1, 31, 31, 0.852);
+    color:rgb(230, 230, 230);
+    display:flex;
+    border-radius:8px 8px 0 0;
+    justify-content: space-between;
+    
+}
+
+.flex-left{
+   margin-left:25px;
+ 
+}
+.backward{
+    background-color: rgb(27, 27, 27);
+    border-radius:50%;
+    padding:5px;
+    margin-top:14px;
+}
+.forward{
+    background-color:  rgb(27, 27, 27);
+    border-radius:50%;
+    padding:5px;
+    margin-left:7px;
+    margin-top:14px;
+}
+
+.flex-right{
+    margin-right:25px;
+    
+ }
+
+.flex-right-btn{
+    border:none;
+    border-radius:15px;
+    font-size:13px;
+    font-weight: bold;
+    padding:9px; 
+    height:31px;
+    width:140px;
+    margin-top:15px;
+    text-align:center;
+    margin-left:590px;
+
+}
+.flex-right-btn:hover{
+    width:142px;
+    height:31px;
+    font-size: 14px;
+}
+
+.users{
+    background-color:rgb(27, 27, 27);
+    border-radius:50%;
+    padding:5px;
+    margin-top:14px;
+    margin-left:3px;
+}
+
+
+.user{
+    background-color:  rgb(27, 27, 27);
+    border-radius:50%;
+    padding:5px;
+    margin-left:7px;
+    margin-top:14px;
+}
+
+/*Navbar below box */
+.nav-below-box{
+    width:73%;
+    height:273px;
+    border-radius:5px;
+    margin-left:25px;
+    margin-top:70px;
+    background-image:linear-gradient(to bottom left,rgba(0, 128, 128, 0),rgba(3, 37, 37, 0),rgba(0, 0, 0, 0.516),rgba(0, 0, 0, 0.795), black);
+}
+.monsoon-hits{
+    display:flex;
+}
+
+.monsoon-img{
+    width:205px;
+    height:205px;
+    margin:33px 10px 0 18px;
+    /* border:1px solid red; */
+}
+.monsoon-hits-right-flex{
+    color:white;
+    margin:33px 10px 0 18px;
+}
+.monsoon-h6{
+    font-size:12px;
+    cursor:pointer;
+}
+.monsoon-h1{
+    font-size:67px;
+    cursor:pointer;
+}
+.monsoon-p{
+    font-size:15px;
+    margin-top:10px;
+    cursor:pointer;
+}
+.monsoon-play-btn{
+    margin-top:25px;
+    width:93px;
+    height:48px;
+    font-size:15px;
+    font-weight: bold;
+    background-color: rgba(19, 232, 83, 0.945);
+    border:none;
+    border-radius: 30px;
+    cursor:pointer;
+}
+.monsoon-play-btn:hover{
+    background-color: rgb(19, 232, 83);
+    width:95px;
+    height:50px;
+}
+.monsoon-follow-btn{
+    margin-top:25px;
+    margin-left:18px;
+    width:110px;
+    height:48px;
+    font-size:15px;
+    font-weight: bold;
+    background-color: black;
+    color:white;
+    border:1px solid rgb(129, 128, 126);
+    border-radius: 33px;
+}
+.monsoon-follow-btn:hover{
+    width:112px;
+    height:50px;
+    border: 1px solid white;
+    cursor:pointer;
+    
+}
+.sub-headings{
+    margin-top:25px;
+    margin-bottom:10px;
+    margin-left:25px;
+    font-size:32px;
+    color:white;
+}
+.music-container-1{
+    display:flex;
+}
+.dard{
+    margin-top:14px;
+    margin-left:25px;
+    width:300px;
+    height:67px;
+    background-color:rgb(37, 35, 35);
+    border-radius:6px;
+    display:flex;
+}
+.dard:hover{
+    background-color:rgb(55, 52, 52);
+    cursor:pointer;
+}
+.perfect{
+    margin-top:14px;
+    margin-left:25px;
+    width:300px;
+    height:67px;
+    background-color:rgb(37, 35, 35);
+    border-radius:6px;
+    display:flex;
+}
+.perfect:hover{
+    background-color:rgb(55, 52, 52);
+    cursor:pointer;
+}
+.holdmyhand{
+    margin-top:14px;
+    margin-left:25px;
+    width:300px;
+    height:67px;
+    background-color:rgb(37, 35, 35);
+    border-radius:6px;
+    display:flex;
+}
+.holdmyhand:hover{
+    background-color:rgb(55, 52, 52);
+    cursor:pointer;
+}
+.music-container-2{
+    display:flex;
+}
+.darshan-monsoon{
+    margin-top:14px;
+    margin-left:25px;
+    width:300px;
+    height:67px;
+    background-color:rgb(37, 35, 35);
+    border-radius:6px;
+    display:flex;
+}
+.darshan-monsoon:hover{
+    background-color:rgb(55, 52, 52);
+    cursor:pointer;
+}
+.tu-mileya{
+    margin-top:14px;
+    margin-left:25px;
+    width:300px;
+    height:67px;
+    background-color:rgb(37, 35, 35);
+    border-radius:6px;
+    display:flex;
+}
+.tu-mileya:hover{
+    background-color:rgb(55, 52, 52);
+    cursor:pointer;
+}
+.driver-license{
+    margin-top:14px;
+    margin-left:25px;
+    width:300px;
+    height:67px;
+    background-color:rgb(37, 35, 35);
+    border-radius:6px;
+    display:flex;
+}
+.driver-license:hover{
+    background-color:rgb(55, 52, 52);
+    cursor:pointer;
+}
+
+.music-img{
+    width:67px;
+    height:67px;
+    border-radius:6px 0 0 6px;
+}
+.music-p{
+    font-size:16px;
+    color:white;
+    font-weight:bold;
+    margin:20px 0 15px 17px;
+}
+
+/* Jump Back In */
+.music-container-3{
+    display:flex;
+}
+
+.mahiye-jinna{
+    width:215px;
+    height:290px;
+    background-color: rgb(30, 28, 28);
+    border-radius: 10px;
+    margin-top:14px;
+    margin-left:25px;
+}
+.mahiye-jinna:hover{
+    background-color:rgb(44, 41, 41);
+    cursor:pointer;
+}
+
+.tum-mere{
+    width:215px;
+    height:290px;
+    background-color: rgb(30, 28, 28);
+    border-radius: 10px;
+    margin-top:14px;
+    margin-left:25px;
+}
+.tum-mere:hover{
+    background-color:rgb(44, 41, 41);
+    cursor:pointer;
+}
+.chaleya{
+    width:215px;
+    height:290px;
+    background-color: rgb(30, 28, 28);
+    border-radius: 10px;
+    margin-top:14px;
+    margin-left:25px;
+}
+.chaleya:hover{
+    background-color:rgb(44, 41, 41);
+    cursor:pointer;
+}
+
+.happier{
+    width:215px;
+    height:290px;
+    background-color: rgb(30, 28, 28);
+    border-radius: 10px;
+    margin-top:14px;
+    margin-left:25px;
+}
+.happier:hover{
+    background-color:rgb(44, 41, 41);
+    cursor:pointer;
+}
+.img-container{
+    width:185px;
+    height:185px;
+    margin:15px 15px 10px 15px;
+    border-radius:5px;
+}    
+.h5-container{
+    color:white;
+    /* margin-top:10px; */
+    font-size:16px;
+    margin-left:15px;
+}
+.p-container{
+    font-size:12px;
+    margin-top:5px;
+    margin-left:15px;
+    color:rgb(235, 231, 231);
+}
+
+/* Recently Played */
+.music-container-4{
+    display:flex;
+}
+.piya-re{
+    width:215px;
+    height:290px;
+    background-color: rgb(30, 28, 28);
+    border-radius: 10px;
+    margin-top:14px;
+    margin-left:25px;
+}
+.piya-re:hover{
+    background-color:rgb(44, 41, 41);
+    cursor:pointer;
+}
+.faasla{
+    width:215px;
+    height:290px;
+    background-color: rgb(30, 28, 28);
+    border-radius: 10px;
+    margin-top:14px;
+    margin-left:25px;
+}
+.faasla:hover{
+    background-color:rgb(44, 41, 41);
+    cursor:pointer;
+}
+.cant-have{
+    width:215px;
+    height:290px;
+    background-color: rgb(30, 28, 28);
+    border-radius: 10px;
+    margin-top:14px;
+    margin-left:25px;
+}
+.cant-have:hover{
+    background-color:rgb(44, 41, 41);
+    cursor:pointer;
+}
+
+/* New Music */
+.music-container-5{
+    display:flex;
+}
+.pop-darshan{
+    width:215px;
+    height:290px;
+    background-color: rgb(30, 28, 28);
+    border-radius: 10px;
+    margin-top:14px;
+    margin-left:25px;
+}
+.pop-darshan:hover{
+    background-color:rgb(44, 41, 41);
+    cursor:pointer;
+}
+.new-hindi{
+    width:215px;
+    height:290px;
+    background-color: rgb(30, 28, 28);
+    border-radius: 10px;
+    margin-top:14px;
+    margin-left:25px;
+}
+.new-hindi:hover{
+    background-color:rgb(44, 41, 41);
+    cursor:pointer;
+}
+.new-dance{
+    width:215px;
+    height:290px;
+    background-color: rgb(30, 28, 28);
+    border-radius: 10px;
+    margin-top:14px;
+    margin-left:25px;
+}
+.new-dance:hover{
+    background-color:rgb(44, 41, 41);
+    cursor:pointer;
+}
+.latest-tamil{
+    width:215px;
+    height:290px;
+    background-color: rgb(30, 28, 28);
+    border-radius: 10px;
+    margin-top:14px;
+    margin-left:25px;
+}
+.latest-tamil:hover{
+    background-color:rgb(44, 41, 41);
+    cursor:pointer;
+}
+
+ /* More of what you like   */
+ .music-container-6{
+    display:flex;
+    /* cursor:pointer; */
+ }
+ .darshan-radio{
+    width:215px;
+    height:290px;
+    background-color: rgb(30, 28, 28);
+    border-radius: 10px;
+    margin-top:14px;
+    margin-left:25px;
+}
+.darshan-radio:hover{
+    background-color:rgb(44, 41, 41);
+    cursor:pointer;
+}
+.happy-vibes{
+    width:215px;
+    height:290px;
+    background-color: rgb(30, 28, 28);
+    border-radius: 10px;
+    margin-top:14px;
+    margin-left:25px;
+}
+.happy-vibes:hover{
+    background-color:rgb(44, 41, 41);
+    cursor:pointer;
+}
+.music-shuttle{
+    width:215px;
+    height:290px;
+    background-color: rgb(30, 28, 28);
+    border-radius: 10px;
+    margin-top:14px;
+    margin-left:25px;
+}
+.music-shuttle:hover{
+    background-color:rgb(44, 41, 41);
+    cursor:pointer;
+}
+.darshan-raval{
+    width:215px;
+    height:290px;
+    background-color: rgb(30, 28, 28);
+    border-radius: 10px;
+    margin-top:14px;
+    margin-left:25px;
+}
+.darshan-raval:hover{
+    background-color:rgb(44, 41, 41);
+    cursor:pointer;
+}
+
+/* India's Best */
+.music-container-7{
+    display:flex;
+}
+.soulful-sitar{
+    width:215px;
+    height:290px;
+    background-color: rgb(30, 28, 28);
+    border-radius: 10px;
+    margin-top:14px;
+    margin-left:25px;
+}
+.soulful-sitar:hover{
+    background-color:rgb(44, 41, 41);
+    cursor:pointer;
+}
+.indie-india{
+    width:215px;
+    height:290px;
+    background-color: rgb(30, 28, 28);
+    border-radius: 10px;
+    margin-top:14px;
+    margin-left:25px;
+}
+.indie-india:hover{
+    background-color:rgb(44, 41, 41);
+    cursor:pointer;
+}
+.tollywood-hits{
+    width:215px;
+    height:290px;
+    background-color: rgb(30, 28, 28);
+    border-radius: 10px;
+    margin-top:14px;
+    margin-left:25px;
+}
+.tollywood-hits:hover{
+    background-color:rgb(44, 41, 41);
+    cursor:pointer;
+}
+.punjabi-hits{
+    width:215px;
+    height:290px;
+    background-color: rgb(30, 28, 28);
+    border-radius: 10px;
+    margin-top:14px;
+    margin-left:25px;
+}
+.punjabi-hits:hover{
+    background-color:rgb(44, 41, 41);
+    cursor:pointer;
+}
+
+/* Favourite Artist */
+.music-container-8{
+    display:flex;
+}
+.img-container-fav{
+    width:185px;
+    height:185px;
+    margin:15px 15px 10px 15px;
+    border-radius:50%;
+} 
+.darshan-fav{
+    width:215px;
+    height:290px;
+    background-color: rgb(30, 28, 28);
+    border-radius: 10px;
+    margin-top:14px;
+    margin-left:25px;
+}
+.darshan-fav:hover{
+    background-color:rgb(44, 41, 41);
+    cursor:pointer;
+}
+.araina-fav{
+    width:215px;
+    height:290px;
+    background-color: rgb(30, 28, 28);
+    border-radius: 10px;
+    margin-top:14px;
+    margin-left:25px;
+}
+.araina-fav:hover{
+    background-color:rgb(44, 41, 41);
+    cursor:pointer;
+}
+.shawn-fav{
+    width:215px;
+    height:290px;
+    background-color: rgb(30, 28, 28);
+    border-radius: 10px;
+    margin-top:14px;
+    margin-left:25px;
+}
+.shawn-fav:hover{
+    background-color:rgb(44, 41, 41);
+    cursor:pointer;
+}
+.arijit-fav{
+    width:215px;
+    height:290px;
+    background-color: rgb(30, 28, 28);
+    border-radius: 10px;
+    margin-top:14px;
+    margin-left:25px;
+}
+.arijit-fav:hover{
+    background-color:rgb(44, 41, 41);
+    cursor:pointer;
+}
+
+/* .bottom{
+    position: fixed;
+    bottom: 0;
+    height:84px;
+    width:100%;
+    /* margin-top:40px; */
+    /* background-color:  rgb(0, 0, 0);
+    color: white;
+    display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex-direction: column; 
+    overflow:auto;
+    
+
+} */
+/* .icons{
+    color:rgb(243, 242, 242);
+    margin-bottom:10px;
+    font-size:30px;
+    
+}
+#previous{
+    font-size: 22px;
+    margin-right:18px;
+    color:rgb(205, 202, 202);
+    margin-bottom:17px;
+}
+#next{
+    font-size: 22px;
+    margin-left:18px;
+    color:rgb(205, 202, 202);
+    
+}
+.icons:hover{
+    color:white;
+    font-size: 32px;;
+}
+#myProgressBar{
+
+    width: 40vw; 
+    cursor: pointer;
+    height:4px;
+    border-radius: 10px;
+}
+.songInfo{
+    display:flex;
+}
+.masterSongImg{
+    width:60px;
+    height:60px;
+    margin:10px 8px 10px 8px;
+} */ 
+
